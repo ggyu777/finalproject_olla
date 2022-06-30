@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
 import styled from "styled-components";
-import { ReportMain, Nav } from "../constructors";
+import { ReportMain, Nav, Footer } from "../constructors";
 import { Context } from "../context/Context";
 
 const Main = () => {
@@ -22,10 +22,12 @@ const Main = () => {
   }, []);
 
   return (
+    <>
     <Page>
       <Nav depart={depart} />
       <ReportMain />
     </Page>
+    </>
   );
 };
 

@@ -7,6 +7,8 @@ import Rating from "../pages/Rating";
 import Error from "../pages/Error";
 import Noresult from "../pages/NoResult";
 import Footer from "./Footer";
+import TestByProgress from "../pages/TestByProgress";
+import TimeManagement from "../pages/TimeManagement";
 
 const ReportMain = () => {
   return (
@@ -18,8 +20,10 @@ const ReportMain = () => {
         <Route path="report/*" element={<Report />} />
         <Route path="notice/*" element={<Notice />} />
         <Route path="mypage/*" element={<Mypage />} />
+        <Route path="test/*" element={<TestByProgress/>}/>
+        <Route path="time/*" element={<TimeManagement/>}/>
       </Routes>
-      <Footer />
+      <Footer/>
     </Main>
   );
 };
